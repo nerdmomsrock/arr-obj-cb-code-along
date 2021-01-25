@@ -86,7 +86,8 @@ function backWards(arr) {
   var newArray = []
 
   for (var i = arr.length - 1; i >= 0; i--) {
-    // code here
+    newArray.push(arr[i]);
+   
   }
 
   return newArray
@@ -100,7 +101,11 @@ function backWards(arr) {
 // findInArray([0,1,2,3], 4); -> false
 
 function findInArray(arr, value) {
-  // code here
+  if (arr[value]){
+    return true
+  } else {
+      return false
+  }
 }
 
 //////////////////PROBLEM 11////////////////////
@@ -113,7 +118,7 @@ function findInArray(arr, value) {
 function addTen(arr) {
   var newArr = []
 
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i+=10) {
     newArr.push(arr[i]);
   }
 
