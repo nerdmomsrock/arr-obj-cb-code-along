@@ -118,7 +118,7 @@ function findInArray(arr, value) {
 function addTen(arr) {
   var newArr = []
 
-  for (var i = 0; i < arr.length; i+=10) {
+  for (var i = 0; i < arr.length; i+10) {
     newArr.push(arr[i]);
   }
 
@@ -136,7 +136,7 @@ function personName() {
     age: 29,
     location: 'Orem, UT',
   }
-  return // Code here
+  return person.firstName;
 }
 
 //////////////////PROBLEM 13////////////////////
@@ -150,7 +150,7 @@ function personLocation() {
     age: 29,
     location: 'Orem, UT',
   }
-  return // Code Here
+  return person['location'];
 }
 
 //////////////////PROBLEM 14////////////////////
@@ -158,7 +158,7 @@ function personLocation() {
 //Use dot notation to add a new property to the object backpack called frontPocket with the value equal to "compass".
 
 const backpack = {}
-
+backpack.frontPocket = "compass";
 // Code Here
 
 //////////////////PROBLEM 15////////////////////
@@ -166,7 +166,7 @@ const backpack = {}
 //Use bracket notation to add a material property to the box object.  Set it's value equal to the string 'cardboard'
 
 const box = {}
-
+box.material = "cardboard";
 // Code Here
 
 //////////////////PROBLEM 16////////////////////
@@ -176,6 +176,7 @@ const box = {}
 const person = {}
 
 person['firstName'] = 'sally'
+
 
 //code here
 
@@ -205,13 +206,22 @@ function updateEmail(obj, str) {
 //////////////////PROBLEM 19////////////////////
 
 // Write a function called isOldEnough that takes a person obj and checks the age property to see if the person is old enough to enter the club.  If they are 21 or older return true else return false.
-
+function isOldEnough (person, age){
+  if (age >= 21){
+    return true
+  } else {
+    return false
+  }
+}
 // Code here
 
 //////////////////PROBLEM 20////////////////////
 
 //Create a function called addRole that takes in a user object as the first parameter and a string as the second parameter.  The string will represent the user's new role in the system (i.e. admin, creator, editor, visitor). Create a new property on the user object called "role" and assign the passed in string to it, then return the updated object.
-
+function addRole (user, string){
+  user = "role"
+  return user.string;
+}
 // Code here
 
 ///////////////////////////////////////////////////////
