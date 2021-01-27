@@ -85,7 +85,7 @@ numbers.push(i);
 function backWards(arr) {
   var newArray = []
 
-  for (var i = arr.length - 1; i >= 0; i--) {
+  for (let i = arr.length - 1; i >= 0; i--) {
     newArray.push(arr[i]);
    
   }
@@ -101,7 +101,7 @@ function backWards(arr) {
 // findInArray([0,1,2,3], 4); -> false
 
 function findInArray(arr, value) {
-  if (arr[value]){
+  if (arr[value]) {
     return true
   } else {
       return false
@@ -118,12 +118,13 @@ function findInArray(arr, value) {
 function addTen(arr) {
   var newArr = []
 
-  for (var i = 0; i < arr.length; i+10) {
-    newArr.push(arr[i]);
+  for (let i = 0; i < arr.length; i += 10) {
+   return newArr.push(arr[i]);
   }
-
-  return newArr
 }
+
+  
+
 
 //////////////////PROBLEM 12////////////////////
 
@@ -177,7 +178,7 @@ const person = {}
 
 person['firstName'] = 'sally'
 
-
+userFirstName = person.firstName
 //code here
 
 //////////////////PROBLEM 17////////////////////
@@ -192,17 +193,20 @@ person['firstName'] = 'sally'
 // };
 
 function updateUser(user) {
+  
   // Code Here
 }
 
+  
 //////////////////PROBLEM 18////////////////////
 
 //Inside the function updateEmail, update the email property of the passed in object to be the value of the parameter str. Return the updated object.
 
 function updateEmail(obj, str) {
+  email[obj] = str;
   // Code here
 }
-
+updateEmail(obj, str);
 //////////////////PROBLEM 19////////////////////
 
 // Write a function called isOldEnough that takes a person obj and checks the age property to see if the person is old enough to enter the club.  If they are 21 or older return true else return false.
@@ -261,7 +265,7 @@ function schoolStatus(status) {
   //   return 'No more video games!'
   // }
 }
-
+ status == "Good" ? "Wow, great job kiddo!" : "No more video games!";
 //////////////////PROBLEM 22////////////////////
 
 // Complete the messageBasedOnAge function by using a ternary statement to return a string based on the age parameter.
