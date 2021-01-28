@@ -101,12 +101,16 @@ function backWards(arr) {
 // findInArray([0,1,2,3], 4); -> false
 
 function findInArray(arr, value) {
-  if (arr[value]) {
-    return true
-  } else {
-      return false
-  }
+  for (let i = 0; i  < arr.length; i ++) {
+    if (arr[i] === value) {
+    return true;
+  } 
 }
+  return false; //no else because this breaks the loop
+  }
+
+
+
 
 //////////////////PROBLEM 11////////////////////
 
@@ -116,12 +120,13 @@ function findInArray(arr, value) {
 // addTen([1,2,3,4]); -> [11,12,13,14]
 
 function addTen(arr) {
-  var newArr = []
+  let newArr = []
 
-  for (let i = 0; i < arr.length; i += 10) {
-   return newArr.push(arr[i]);
-  }
+  for (let i = 0; i < arr.length; i ++) {
+   newArr.push(arr[i] + 10); //add ten here to each index item
+  } return newArr //outside of for loop
 }
+
 
   
 
@@ -187,13 +192,15 @@ userFirstName = person.firstName
 
 // The existing user looks like this:
 // var someUser = {
-//   name: 'Sally Rally',
-//   pwHash: 'U+Ldlngx2BYQk',
-//   username: 'SallyRally801'
-// };
+  //name: 'Sally Rally',
+  //pwHash: 'U+Ldlngx2BYQk',
+  //username: 'SallyRally801'
+ //};
 
-function updateUser(user) {
-  
+function updateUser(Ryan) {
+  updateUser.pwHash = "superSafe";
+  updateUser.userName = "ryan2020";
+  return updateUser(Ryan)
   // Code Here
 }
 
