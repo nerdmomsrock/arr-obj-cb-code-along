@@ -283,6 +283,7 @@ function schoolStatus(status) {
 
 function messageBasedOnAge(age) {
   //code here
+  
 }
 
 //////////////////PROBLEM 23////////////////////
@@ -291,7 +292,9 @@ function messageBasedOnAge(age) {
 // To see it working, invoke outerFn at the bottom, passing in the InnerFn as the callback. You should now see "The innerFn is a callback!" in the console.
 
 // Create function here
-
+function outerFn(cb){
+  return cb()
+}
 // ===== DO NOT TOUCH CODE BELOW THIS LINE ===== //
 function innerFn() {
   return 'The innerFn is a callback!'
@@ -299,7 +302,7 @@ function innerFn() {
 // ===== DO NOT TOUCH CODE ABOVE THIS LINE ===== //
 
 // Invoke function here
-
+outerFn()
 //////////////////PROBLEM 24////////////////////
 
 // Create a function called fullName, that takes in three parameters: firstName, lastName, and a callback.
@@ -307,7 +310,9 @@ function innerFn() {
 // To test, invoke fullName with your first name, last name and the welcomeMessage function as arguments.
 
 // Create function fullName here
-
+function fullName(firstName, lastName, cb) {
+ callback(firstName, lastName)
+}
 // ===== DO NOT TOUCH CODE BELOW THIS LINE ===== //
 function welcomeMessage(first, last) {
   return `Welcome to DevMountain, ${first} ${last}!`
@@ -315,7 +320,7 @@ function welcomeMessage(first, last) {
 // ===== DO NOT TOUCH CODE ABOVE THIS LINE ===== //
 
 // Invoke fullName below
-
+fullName("Ryan", "Morgan", welcomeMessage());
 //////////////////PROBLEM 25////////////////////
 
 // Do not edit the code below.
