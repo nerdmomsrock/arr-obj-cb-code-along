@@ -217,7 +217,7 @@ updateEmail(obj, str);
 //////////////////PROBLEM 19////////////////////
 
 // Write a function called isOldEnough that takes a person obj and checks the age property to see if the person is old enough to enter the club.  If they are 21 or older return true else return false.
-function isOldEnough (person, age){
+function isOldEnough (person){
   if (age >= 21){
     return true
   } else {
